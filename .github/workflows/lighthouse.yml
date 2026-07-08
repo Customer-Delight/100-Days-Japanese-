@@ -1,0 +1,24 @@
+name: "Lighthouse CI"
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install LHCI
+        run: npm install -g @lhci/cli@0.11.0
+
+      - name: Run Lighthouse (temporary public storage)
+        run: |
+          lhci autorun --collect.url=https://customer-delight.github.io/100-Days-Japanese-/ --upload.target=temporary-public-storage
