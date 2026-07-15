@@ -1,54 +1,75 @@
-name: "Bug report"
-about: "Report a reproducible problem with the PWA prototype"
+---
+name: 🐛 Bug Report
+about: Report a bug found while testing the PWA
 title: "[BUG] "
-labels: ["bug","needs-triage"]
-assignees: []
+labels: bug, needs-triage
+assignees: ''
+---
+
+## 🔴 Bug Severity
+<!-- Select one by placing an X in the brackets -->
+- [ ] **Blocking** - App doesn't work / critical feature broken
+- [ ] **Major** - Significant functionality is broken
+- [ ] **Minor** - Non-critical issue, workaround exists
 
 ---
 
-**Short summary**
-One-line summary of the problem.
+## 📱 Environment Information
 
-**Steps to reproduce**
+| Property | Value |
+|----------|-------|
+| **Browser** | Chrome / Firefox / Safari / Edge / Other |
+| **OS** | Windows / macOS / iOS / Android / Other |
+| **Device Type** | Desktop / Tablet / Mobile |
+| **Screen Size** | e.g., 1920x1080, 768x1024, 375x667 |
+| **PWA Version** | Date you accessed it |
+
+---
+
+## 📝 Bug Description
+A clear and concise description of what the bug is.
+
+---
+
+## 🔄 Steps to Reproduce
+Steps to reproduce the behavior:
 1. Go to '...'
-2. Click/Tap '...'
-3. See '...'
+2. Click on '...'
+3. Scroll down to '...'
+4. See error
 
-**Checklist (please check what you can)**
-- [ ] I can reproduce this consistently
-- [ ] I tried a different browser or device
-- [ ] I attached screenshots or a short recording
-- [ ] I added device & browser info below
-- [ ] (Optional) I copied any console errors here
+---
 
-**PWA-specific**
-- Did you try to install the site as a PWA? (Android/iOS/desktop):  
-  - [ ] Yes — it installed and launched full-screen  
-  - [ ] Yes — it installed but did not behave correctly  
-  - [ ] No / I couldn’t install
-- Offline behavior (what happened when you went offline): e.g., “works”, “partial (some pages fail)”, “doesn’t work”.
+## ✅ Expected Behavior
+A clear description of what you expected to happen.
 
-**Expected result**
-What you expected to happen.
+---
 
-**Actual result**
-What happened instead. Please paste error messages here or attach screenshots.
+## ❌ Actual Behavior
+A clear description of what actually happened instead.
 
-**Device & browser**
-- Device (e.g., Pixel 6, iPhone 12, Windows laptop)
-- OS & version (e.g., Android 14, iOS 17, Windows 11)
-- Browser & version (e.g., Chrome 125, Safari 17)
+---
 
-**Network**
-- Wi‑Fi / Mobile data / Offline
+## 📸 Screenshots or Videos
+If applicable, add screenshots or screen recordings to help explain your problem. This is very helpful!
 
-**Severity**
-- blocker / major / minor / cosmetic
+---
 
-**Console errors (if you can)**
-Paste any JS errors or DevTools logs here. If you can’t access this, screenshots are fine.
+## 🔧 Browser Console Output
+<!-- Open DevTools (F12) and check the Console tab for errors -->
+```
+Paste any error messages from the browser console here
+```
 
-**Additional notes**
-Anything else (time, steps that made it work, workaround). If you want credit, add your GitHub handle here: @your-handle
+---
 
-If you're not comfortable with the technical fields, please just write what you did and attach a screenshot — that helps a lot.
+## 💡 Additional Context
+Add any other context about the problem here. For example:
+- Network conditions (4G, WiFi, Offline mode)
+- Whether you installed the PWA or accessed via browser
+- Any actions taken before the bug occurred
+
+---
+
+## ✨ Thank You!
+Thank you for helping us improve the PWA! 🙏
